@@ -1,0 +1,56 @@
+body{
+    position:relative;
+}
+.input_container{
+    display: flex;
+    margin: 10px;
+}
+.label{
+    min-width: 100px;
+}
+.table{
+    flex:1 1 0%;
+}
+.table>div{
+    display: grid;
+    grid-template-columns: repeat(4,10fr) 10fr 1fr;
+    gap: 30px;
+}
+.form-invisible{
+    height: 50vh;
+    width:50vw;
+    top:calc(50vh - 25vh);
+    right:calc(50vw - 25vw);
+    display: none;
+    position:absolute;
+    background-color: aqua;
+}
+.form-visible{
+    height:50vh;
+    width:50vw;
+    top:calc(50vh - 25vh);
+    right:calc(50vw - 25vw);
+    position:fixed;
+    background-color: aqua;
+    display:block;
+    border:5px solid black;
+    box-shadow: 0 0 0 25vh #cccccc99;
+}
+.book{
+    padding:4px 8px;
+}
+.delete-button{
+    color:red;
+    border:2px solid red;
+    text-align: center;
+    border-radius: 3px;
+}
+.invisible{
+    opacity: 0;
+}
+.readButton{
+    border:3px solid green;
+    color:green;
+    border-radius: 5px;
+    text-align: center;
+}
